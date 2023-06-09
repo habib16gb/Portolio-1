@@ -1,0 +1,121 @@
+.style-switcher {
+  width: 200px;
+  position: fixed;
+  right: 5px;
+  top: 30px;
+  border: 1px solid var(--bg-Black-50);
+  background-color: var(--bg-Black-100);
+  z-index: 50;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  padding: 8px;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+}
+.style-switcher .pick {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.style-switcher h4 {
+  text-transform: capitalize; 
+  color: var(--text-Black-700);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-align: center;
+  /* border: 2px solid red; */
+
+}
+.style-switcher .s-icon {
+  position: absolute;
+  border: 2px solid var(--bg-Black-50);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--bg-Black-100);
+  color: var(--text-Black-900);
+  right: 100%;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.style-switcher .s-icon i {
+  line-height: 40px;
+}
+.style-switcher .style-switcher-toggler {
+  /* border: 2px solid red; */
+  top: -3px;
+}
+.style-switcher .day-night {
+  top: 44px;
+}
+.style-switcher .colors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+.style-switcher .colors div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+.colors .pallet {
+  outline: none;
+  width: 30px;
+  height: 32px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: -20px;
+  left: -30px;
+}
+
+.colors .pallet::-webkit-color-swatch {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #000;
+}
